@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    text-align: center;
+    text-align: left;
   }
 
 body {
@@ -12,7 +12,8 @@ body {
 }
 
 header {
-    padding: 20px;
+    overflow: auto;
+    clear: both;
     margin-bottom: 20px;
     color: #333;
     background: #ffffff;
@@ -23,47 +24,40 @@ header {
 section {
     padding: 20px;
     margin-bottom: 20px;
+    max-width: 960px;
+    margin: auto;
     background: #4aaaa5;
     }
   
-  #name {
+#name {
     padding: 20px;
     margin: 0 15%;
-    margin-bottom: 20px;
     background: #4aaaa5;
     color: white;
     float: left;
     width: 25%;
   }
 
+img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+}
 
-    #main {
-    padding: 0px;
-    background: #ffffff;
-    font: #777777;
-    color: #fff;
-    float: right;
-    width: 15%;
-  }
-  
-#contact1 {
-    padding: 0px;
-    background: #ffffff;
-    font: #777777;
-    color: #fff;
-    float: right;
-    width: 15%;
-  }
-  
+#main,
+#contact1,
 #portfolio1 {
-    padding: 0px;
-    background: #cccccc;
+    padding: auto;
+    background: #ffffff;
     font: #777777;
-    color: #fff;
+    color: #fff;  
     float: right;
     width: 15%;
   }
-
+h2 {
+  text-align: left;  
+}
 footer {
     padding: 20px;
     clear: both;
