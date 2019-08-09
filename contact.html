@@ -11,38 +11,41 @@
 
 
 <body>
-
+<!-- This is for the header -->
     <nav>
-        <section>
-            <div class="clearfix">
+        <div class="clearfix">
+            <div id="headsection">
+
                 <div class="name">Erik Boerma
                 </div>
 
                 <!-- The links in the header -->
                 <div>
-                    <ul>
+                    <ul class="headerlist">
                         <li><a id="index" href="index.html">About</a></li>
                         <li><a id="contact" href="contact.html">Contact</a></li>
                         <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+
     </nav>
     <br>
+    
 
-    <div class="container">
-        <form action="action_page.php">
+    <div class="contactForm">
+        <form>
 
-            <label for="FormName">Name</label>
-            <input type="text" id="FormName" name="fullname" placeholder="John Smith">
+            Name <br>
+            <input type="text" name="fullname" placeholder="John Smith">
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="placeholder@gmail.com">
-
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" style="height:200px"></textarea>
+            Email
+            <input type="text" id="email" placeholder="example@gmail.com">
+            
+            Message
+            <textarea>
+            </textarea>
 
             <input type="submit" value="Submit">
 

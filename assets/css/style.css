@@ -58,8 +58,9 @@ li a {
 
 #aboutmeTitle {
   color: #4aaaa5;
-  padding: 10px 10px;
+  padding: 15px 15px;
   text-align: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 #IMGaboutme {
@@ -73,37 +74,34 @@ li a {
 }
 
 /* for the contact info box */
+.contactForm {
+  max-width: 960px;
+  font-size: 17px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
 
 input[type="text"],
 select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid lightgrey;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+}
+
+textarea {
+  height:200px;
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #4aaaa5;
   color: white;
   padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }
 
 /* for the portfolio table   */
