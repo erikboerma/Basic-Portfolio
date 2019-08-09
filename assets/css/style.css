@@ -1,87 +1,172 @@
+/* Items for each page */
+
 * {
-    box-sizing: border-box;
-    text-align: left;
-    max-width: 960px;
-    margin: auto;
-  }
-
-  header {
-    display: flex;
-    justify-content: right;
-    text-align: left;
-    padding: 20px 20px;
-    background-color: white; 
-  }
-
-  header > div {
-    color: white;
-    width: auto;
-    margin: auto;
-    text-align: right;
-  }
-
-  #index,
-  #contact,
-  #portfolio {
-    flex-grow: 5;
-
-  }
-  .topnav a {
-      overflow: hidden;
-      float: right;
-      background-color: #ffffff;
-      color: grey;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      text-align: right;
-      padding: 14px 16px;
-    }
-  
-  .topnav a:hover {
-    background-color: #ffffff;
-    color: #777777;
-  }
-
-  body {
-    font-size: 24px;
-    line-height: 32px;
-    color: #777777;
-    background: #dddddd;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  box-sizing: inherit;
+  text-align: left;
+  max-width: 960px;
+  margin: auto;
 }
 
+body {
+  font-size: 24px;
+  line-height: 32px;
+  color: #777777;
+  background-image: url("background.jpeg");
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+/* For the header */
 
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    margin: auto;
-    background: #4aaaa5;
-    }
-  
+#headsection {
+  background: #4aaaa5;
+}
+
 #name {
-    padding: 20px;
-    margin: 0 15%;
-    background: #4aaaa5;
-    color: white;
-    width: 20%;
-  }
+  background: #4aaaa5;
+  color: white;
+  float: left;
+}
 
-img {
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li a {
+  display: block;
+  color: #777777;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-size: 18px;
+  float: right;
+}
+
+/* For the about me page   */
+
+#aboutme {
+  background-color: white;
+}
+
+#aboutmeTitle {
+  color: #4aaaa5;
+  padding: 10px 10px;
+  text-align: left;
+}
+
+#IMGaboutme {
   width: 200px;
   height: 200px;
   margin: 10px;
   float: left;
 }
-
-h2 {
-  text-align: left;  
-  font: #4aaaa5;
+#aboutmeDetails {
+  padding: 20px;
 }
 
-footer {
-    padding: 20px;
-    clear: both;
-    background: #666666;
-    font: #777777;
-    text-align: center;
+/* for the contact info box */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* for the portfolio table   */
+
+.main {
+  max-width: 960px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
   }
-   
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* For the footer on all 3 pages */
+footer {
+  padding: 20px;
+  clear: both;
+  background: #666666;
+  font: #777777;
+  text-align: center;
+  border-top: 5px solid #4aaaa5;
+}

@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/Style.css">
     <title>Contact Me</title>
 </head>
 
-<!-- This is for the header -->
-<header>
-        <section id="name">Erik Boerma</section>
-        
-        <div class="topnav">
-
-            <!-- The links in the header -->
-            <a id= "index" href= "index.html">About</a>            
-            <a id= "contact" href="contact.html">Contact</a>
-            <a id= "portfolio"href="portfolio.html">Portfolio</a>
-
-        </div>
-
-</header>
 
 <body>
-    
-    <p>
-        test
-    </p>
+
+    <nav>
+        <section>
+            <div class="clearfix">
+                <div class="name">Erik Boerma
+                </div>
+
+                <!-- The links in the header -->
+                <div>
+                    <ul>
+                        <li><a id="index" href="index.html">About</a></li>
+                        <li><a id="contact" href="contact.html">Contact</a></li>
+                        <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <br>
+
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="FormName">Name</label>
+            <input type="text" id="FormName" name="fullname" placeholder="John Smith">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="placeholder@gmail.com">
+
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
 </body>
+<br>
 <footer>
     Copyright 2019
 </footer>
+
 </html>
