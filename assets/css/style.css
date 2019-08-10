@@ -1,5 +1,3 @@
-/* Items for each page */
-
 * {
   box-sizing: inherit;
   text-align: left;
@@ -147,22 +145,25 @@ input[type="submit"] {
 }
 
 .portfolioImage {
-  width: 200px;
-  height: 200px;
-  float: left;
+  width: 214px;
+  height: 214px;
   border: 1px solid #dddddd;
 
 }
 
 .row {
   display: flex;
-  width: 100%;
+  width: 50%;
 }
 
 .column {
   width: 50%;
 }
 
+.container1 {
+  padding: 10px 0;
+
+}
 .content {
   background-color: white;
   width: 50%;
@@ -176,9 +177,10 @@ input[type="submit"] {
   color: white;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: 20px;
-  width: 210px;
+  width: 215px;
   height: 30px;
   text-align: center;
+  margin: -80px 0 0;
 }
 
 .contentRPS {
