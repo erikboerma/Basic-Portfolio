@@ -106,58 +106,51 @@ input[type="submit"] {
 
 /* for the portfolio table   */
 
-.main {
-  max-width: 960px;
-  margin: auto;
+#main {
+  background-color: white;
+  padding: 30px;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+#portfolio {
+  color: #4aaaa5;
+  padding: 15px 15px;
+  text-align: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.portfolioImage {
+  width: 200px;
+  height: 200px;
+  float: left;
 }
 
 .row {
-  margin: 8px -16px;
+  display: inline-flex;
 }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  flex: 50%;
+  float: right;
 }
 
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
+    clear: left;
+
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+h3 {
+  background-color: #4aaaa5;
+  color: white;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 20px;
+  padding: 5px;
+  width: 400px;
+  text-align: center;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
 /* For the footer on all 3 pages */
 footer {
