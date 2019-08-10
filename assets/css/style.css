@@ -32,10 +32,11 @@ body {
   padding: 0 10px;
   height: 60px;
   width: 30%;
-  font-family: 'Georgia', Times, Times New Roman, serif;
 }
-h2 {
-  padding: 1%;
+
+#erik {
+  padding: 5%;
+  font-family: 'Georgia', Times, Times New Roman, serif;
 }
 .clearfix::after {
   content: "";
@@ -141,6 +142,7 @@ input[type="submit"] {
   color: #4aaaa5;
   padding: 15px 15px;
   text-align: left;
+  bottom: 20px;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -148,6 +150,8 @@ input[type="submit"] {
   width: 200px;
   height: 200px;
   float: left;
+  border: 1px solid #dddddd;
+
 }
 
 .row {
@@ -161,7 +165,8 @@ input[type="submit"] {
 
 .content {
   background-color: white;
-  padding: 10px;
+  width: 50%;
+  padding: 20px;
 
 }
 
@@ -174,6 +179,10 @@ input[type="submit"] {
   width: 210px;
   height: 30px;
   text-align: center;
+}
+
+.contentRPS {
+  align-content: left;
 }
 
 
